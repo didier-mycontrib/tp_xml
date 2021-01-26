@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produit ref="p1"
+    xmlns="http://www.example.org/produit">
+    <label>cahier</label>
+    <prix>3.6</prix>
+    <caracteristique>petit cahier</caracteristique>
+</produit>

@@ -1,0 +1,5 @@
+<!ELEMENT address (street,zip,town,country?) >
+<!ELEMENT street (#PCDATA) >
+<!ELEMENT zip (#PCDATA) >
+<!ELEMENT town (#PCDATA) >
+<!ELEMENT country (#PCDATA) >

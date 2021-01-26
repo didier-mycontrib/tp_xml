@@ -1,0 +1,17 @@
+<!ELEMENT letter (head,body,signature?) >
+<!ELEMENT head (location,date,from,to,subject) >
+<!ELEMENT body (p)* >
+<!ELEMENT p (#PCDATA) >
+<!ELEMENT location (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ATTLIST date xml:lang NMTOKEN #IMPLIED>
+<!ELEMENT subject (#PCDATA) >
+<!ENTITY % addr SYSTEM "address.dtd" >
+<!ELEMENT from (title?,name,company?,address,telephone?) >
+<!ELEMENT to (title?,name,company?,address,telephone?) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT company (#PCDATA) >
+<!ELEMENT telephone (#PCDATA) >
+<!ELEMENT signature (#PCDATA) >
+%addr;

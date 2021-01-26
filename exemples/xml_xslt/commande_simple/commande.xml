@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="commande_xhtml.xsl"?> -->
+<commande>
+   <numeroCmde>123</numeroCmde>
+   <dateCmde>2010-01-20</dateCmde>
+   <client>
+      <numero>1</numero> 
+      <prenom>alain</prenom>
+      <nom>Therieur</nom>
+      <email>xxx@yyy.fr</email>
+      <adresse>12 rue Elle, 75000 Par ici</adresse>
+   </client>
+   <produitsEnQte>
+          <reference>1</reference>
+          <designation>cahier</designation>
+          <caracteristiques> petits carreaux , 100 pages </caracteristiques>
+          <prix>12.5</prix>
+          <poids>0.120</poids> 
+          <volume>0.0239</volume>
+          <quantite>2</quantite>
+  </produitsEnQte>
+  <produitsEnQte>
+          <reference>2</reference>
+          <designation>trousse</designation>
+          <caracteristiques> petite trousse rouge </caracteristiques>
+          <prix>4.5</prix>
+          <poids>0.20</poids> 
+          <volume>0.0439</volume>
+          <quantite>4</quantite>
+   </produitsEnQte>
+</commande>

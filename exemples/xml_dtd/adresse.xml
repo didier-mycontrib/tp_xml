@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE address SYSTEM "address.dtd">
+<address>
+	<street> 12, rue Elle </street>
+	<zip> 75000 </zip>
+	<town> Paris </town>
+	<country> France </country>
+</address>
