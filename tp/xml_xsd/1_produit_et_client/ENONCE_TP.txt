@@ -1,0 +1,19 @@
+a) sans namespace :
+- s'inspirer le l'exemple client_sans_ns.xml et .xsd
+- coder la partie manquante dans produit_sans_ns.xsd
+  de manière à pouvoir valider le contenu de produit_sans_ns.xml
+- vérifier éventuellement la bonne structure de produit_sans_ns.xsd
+  en lancant le script pre_validation_xsd_v1_sans_ns.bat
+  s'il fonctionne correctement et pas trop lentement
+- ajuster et lancer lancer_validation_xml_via_xsd_v1_sans_ns.bat 
+  pour effectuer des tests
+
+b) avec namespace :
+- s'inspirer le l'exemple client.xml et .xsd
+- dupliquer (par copier/coller dans explorateur) le fichier 
+  produit_sans_ns.xsd en un nouveau fichier produit.xsd
+- ajuster le contenu du fichier produit.xsd
+  de manière à pouvoir valider le contenu de produit.xml
+  avec le namespace xml "http://produit.nf.org"
+- ajuster et lancer lancer_validation_xml_via_xsd_v2_avec_ns.bat 
+  pour effectuer des tests

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://livraison.nf.org"
+    xmlns:nfprod="http://produit.nf.org"
+    xmlns:nfcli="http://client.nf.org"
+	targetNamespace="http://livraison.nf.org"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+
+
+  <xsd:annotation>
+		<xsd:documentation>demande de livraison</xsd:documentation>
+	</xsd:annotation>
+	
+<!-- importation du "sous-schéma" décrivant la structure d'un produit -->	
+<xsd:import namespace="http://produit.nf.org" schemaLocation="produit.xsd" />	
+
+<!-- importation du "sous-schéma" décrivant la structure d'un client -->	
+<xsd:import namespace="http://client.nf.org" schemaLocation="client.xsd" />	
+
+	
+<xsd:element name="demandeLivraison" type="tns:Demandelivraison"/>
+		
+<xsd:simpleType name="TypeLivraison">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="Colissimo"/>
+		<xsd:enumeration value="Ordinaire"/>
+		<xsd:enumeration value="Express"/>
+		<!-- and so on ... -->
+	</xsd:restriction>
+</xsd:simpleType>
+
+
+<xsd:complexType name="Demandelivraison">
+	<xsd:sequence>
+	  <xsd:element name="numeroCmde" type="xsd:positiveInteger"/>
+	  <xsd:element name="modeLivraison" type="tns:TypeLivraison" />
+	  <xsd:element name="dateCmde" type="xsd:date"/>
+	  <xsd:element ref="nfcli:client" />		
+      <xsd:element ref="nfprod:produitEnQte"  minOccurs="0" maxOccurs="unbounded"/>				
+	</xsd:sequence>
+</xsd:complexType>
+	
+
+</xsd:schema>

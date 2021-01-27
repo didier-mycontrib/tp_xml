@@ -1,0 +1,21 @@
+a) sans namespace :
+- s'inspirer le l'exemple commande_sans_ns.xml et .xsd
+- dupliquer (par copier/coller dans explorateur) le fichier 
+  commande_sans_ns.xsd en un nouveau fichier demandeLivraison_sans_ns.xsd
+- modifier le contenu de demandeLivraison_sans_ns.xsd
+  de manière à pouvoir valider le contenu de demandeLivraison_sans_ns.xml
+  (ajouter et référencer un type simple "TypeTypeLivraison" basé sur une énumération
+   de valeurs possibles : Colissimo ou Express ou Ordinaire )
+- ajuster et lancer lancer_validation_xml_via_xsd_v1_sans_ns.bat 
+  pour effectuer des tests
+
+b) avec namespace :
+- s'inspirer le l'exemple commande_explicit_ns.xml et commande.xml et .xsd
+- dupliquer (par copier/coller dans explorateur) le fichier 
+  demandeLivraison_sans_ns.xsd en un nouveau fichier demandeLivraison.xsd
+- ajuster le contenu du fichier demandeLivraison.xsd
+  de manière à pouvoir valider le contenu de demandeLivraison.xml
+  ou bien demandeLivraison_explicit_ns.xml
+  avec le namespace xml "http://livraison.nf.org"
+- ajuster et lancer lancer_validation_xml_via_xsd_v2_avec_ns.bat 
+  pour effectuer des tests

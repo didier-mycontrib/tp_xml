@@ -1,0 +1,28 @@
+<!--
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="personne" type="Personne" />
+    
+<xsd:complexType name="Personne">
+		<xsd:sequence>
+			<xsd:element name="nom" type="xsd:string"/>
+			<xsd:element name="prenom" type="xsd:string" maxOccurs="3" />
+		</xsd:sequence>
+		<xsd:attribute name="age" type="xsd:positiveInteger"/>
+</xsd:complexType>				
+	
+</xsd:schema>
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="personne" type="Personne" />
+    
+<xs:complexType name="Personne">
+		<xs:sequence>
+			<xs:element name="nom" type="xs:string"/>
+			<xs:element name="prenom" type="xs:string" maxOccurs="3" />
+		</xs:sequence>
+		<xs:attribute name="age" type="xs:positiveInteger"/>
+</xs:complexType>				
+	
+</xs:schema>

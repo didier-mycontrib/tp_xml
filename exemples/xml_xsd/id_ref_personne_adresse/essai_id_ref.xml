@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annuaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:noNamespaceSchemaLocation="schema_id_ref.xsd">
+               
+    <pays id="1">
+       <nom>France</nom>
+       <capitale>Paris</capitale>
+    </pays>   
+    
+    <pays id="2">
+       <nom>Allemagne</nom>
+       <capitale>Berlin</capitale>
+    </pays>         
+               
+	<adresse id="1">
+		<rue>1, rue elle</rue>
+		<cp>75001</cp>
+		<ville>Paris</ville>
+	</adresse>
+	
+	<adresse id="2">
+		<rue>1, rue 2</rue>
+		<cp>80000</cp>
+		<ville>Amiens</ville>
+	</adresse>
+	
+	<personne idAdr="1">
+		<nom>dupond</nom>
+		<prenom>luc</prenom>		
+	</personne>
+	
+	<personne idAdr="1">
+		<nom>dupond</nom>
+		<prenom>julie</prenom>		
+	</personne>
+
+
+	<personne idAdr="2">
+		<nom>durant</nom>		
+		<prenom>paul</prenom>
+	</personne>
+
+	
+</annuaire>

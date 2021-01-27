@@ -1,0 +1,46 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    version="1.1"
+    xmlns:nfprod="http://produit.nf.org"
+	targetNamespace="http://produit.nf.org"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+    
+<xsd:element name="produit" type="nfprod:Produit"/>
+
+<xsd:element name="produitEnQte" type="nfprod:ProduitEnQte"/>
+
+<!-- limitation enlevée par XSD 1.1 : maxOccurs="1" ok 
+      mais maxOccurs="unbounded ou 2" interdit -->
+    
+<!-- Produit -->  
+  
+<xsd:complexType name="Produit">
+	<xsd:all>
+			<xsd:element name="designation" type="xsd:string"/>
+			<xsd:element name="caracteristiques" type="xsd:string"
+			             minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="prix" type="xsd:double"/>
+			<xsd:element name="poids" type="xsd:double"/> 
+			<xsd:element name="volume" type="xsd:double"/> 
+	</xsd:all>
+	<xsd:attribute name="reference" type="xsd:int"/>
+</xsd:complexType>
+
+<!-- produit commande(avec quantite) heritant de produit -->
+<!-- limitation de XSD 1.0 : pas possible d'hériter 
+     d'un complexType basé sur xsd:all 
+	 CETTE LIMITATION EST HEUREUSEMENT LEVEE EN XSD 1.1 -->
+	 
+<xsd:complexType name="ProduitEnQte">
+   <xsd:complexContent>
+     <xsd:extension base="nfprod:Produit">
+		     <xsd:all>
+			      <xsd:element name="quantite" type="xsd:int"/>
+		     </xsd:all>
+		 </xsd:extension>
+	</xsd:complexContent>
+</xsd:complexType>
+	
+	
+</xsd:schema>

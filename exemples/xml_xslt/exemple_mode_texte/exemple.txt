@@ -1,0 +1,5 @@
+
+      Article - Mon article
+      Auteurs : 
+      - M. Foo
+      - M. Bar

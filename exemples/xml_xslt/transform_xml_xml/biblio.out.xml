@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="biblio_xhtml.xsl"?>
+<bibliographie>
+    <title> Bibliographie sur certains langages de programmation </title>           
+	<sujet>
+		<title>C++</title>
+		<book price="30.5">
+			<title>Mieux developper en C++</title>
+			<auteur>auteur francais</auteur>
+			<editeur>Inter-Editions</editeur>
+		</book>
+		<book price="50">
+			<title>Numerical recipes in c++</title>
+			<auteur>auteurs americains</auteur>
+			<editeur>????</editeur>
+		</book>
+		
+	</sujet>
+	<sujet>
+		<title>Java</title>
+		<book price="30.8">
+			<title>Java in a nutshell</title>
+			<auteur>xxx</auteur>
+			<editeur>O-Reilly</editeur>
+		</book>
+		<book price="45.5">
+			<title>J2EE</title>
+			<auteur>????</auteur>
+			<editeur>Wrox</editeur>
+		</book>
+		<book price="30">
+			<title>Comment programmer en buvant un cafe</title>
+			<auteur>remi Majeur</auteur>
+			<editeur>World Company</editeur>
+		</book>
+		<book price="25">
+			<title>JSP</title>
+			<auteur>jean Bon</auteur>
+			<editeur>World Company</editeur>
+		</book>
+	</sujet>
+	<sujet>
+		<title>XML</title>
+		<book price="27">
+			<title>XML, langage et applications</title>
+			<auteur>Alain Michard (INRIA)</auteur>
+			<editeur>Eyrolles</editeur>
+		</book>
+		<book price="15">
+			<title>XML en poche</title>
+			<auteur>auteur qui a ecrit le livre</auteur>
+			<editeur>editeur qui va bien</editeur>
+		</book>
+		
+	</sujet>
+</bibliographie>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:nfcmde="http://commande.nf.org"
+    xmlns:nfprod="http://produit.nf.org"
+    xmlns:nfcli="http://client.nf.org"
+	targetNamespace="http://commande.nf.org"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+
+
+  <xsd:annotation>
+		<xsd:documentation>Commande</xsd:documentation>
+	</xsd:annotation>
+	
+<!-- importation du "sous-schéma" décrivant la structure d'un produit -->	
+<xsd:import namespace="http://produit.nf.org" schemaLocation="produit.xsd" />	
+
+<!-- importation du "sous-schéma" décrivant la structure d'un client -->	
+<xsd:import namespace="http://client.nf.org" schemaLocation="client.xsd" />	
+	
+	
+<xsd:element name="commande" type="nfcmde:Commande"/>
+		
+
+<xsd:complexType name="Commande">
+	<xsd:sequence>
+	  <xsd:element name="numeroCmde" type="xsd:positiveInteger"/>
+	  <xsd:element name="dateCmde" type="xsd:date"/>
+	  <xsd:element ref="nfcli:client" />		
+      <xsd:element ref="nfprod:produitEnQte"  minOccurs="0" maxOccurs="unbounded"/>			
+	</xsd:sequence>
+</xsd:complexType>
+	
+
+</xsd:schema>

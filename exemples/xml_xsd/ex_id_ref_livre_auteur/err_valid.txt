@@ -1,0 +1,2 @@
+org.xml.sax.SAXParseException; systemId: file:///D:/tp/local-git-mycontrib-repositories/tp_xml/exemples/xml_xsd/ex_id_ref_livre_auteur/exemple_id_ref_invalid.xml; lineNumber: 32; columnNumber: 10; cvc-identity-constraint.4.3: Key 'LivreToPersonne' with value '3' not found for identity constraint of element 'biblio'.
+document xml pas valide

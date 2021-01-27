@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://client.nf.org client.xsd"
+         xmlns="http://client.nf.org"
+	   numero="1" >
+      <prenom>alain</prenom>
+	  <prenom>alex</prenom>
+      <nom>Therieur</nom>
+      <email>xxx@yyy.fr</email>
+      <adresse>12 rue Elle, 75000 Par ici</adresse>
+</client>
+  

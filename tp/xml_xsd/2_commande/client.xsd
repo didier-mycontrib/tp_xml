@@ -1,0 +1,21 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:nfcli="http://client.nf.org"
+	targetNamespace="http://client.nf.org"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+    
+<xsd:element name="client" type="nfcli:Client"/>
+    
+<xsd:complexType name="Client">
+		<xsd:sequence>
+		    <xsd:element name="prenom" type="xsd:string"
+			             maxOccurs="3" />
+			<xsd:element name="nom" type="xsd:string"/>
+			<xsd:element name="email" type="xsd:string"/>
+			<xsd:element name="adresse" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="numero" type="xsd:positiveInteger"/>
+</xsd:complexType>				
+	
+</xsd:schema>

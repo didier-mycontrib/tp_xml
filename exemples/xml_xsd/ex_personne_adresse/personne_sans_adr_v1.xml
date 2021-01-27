@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<personne age="51"
+     	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     	  xsi:noNamespaceSchemaLocation="personne_sans_adr_v1.xsd">
+	<nom>Defrance</nom>
+	<prenom>Didier</prenom>
+</personne>

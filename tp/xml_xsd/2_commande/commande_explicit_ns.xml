@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmde:commande xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://commande.nf.org commande.xsd"
+          xmlns:cmde="http://commande.nf.org"
+		  xmlns:cli="http://client.nf.org"
+		  xmlns:p="http://produit.nf.org">
+   <cmde:numeroCmde>123</cmde:numeroCmde>
+   <cmde:dateCmde>2010-01-20</cmde:dateCmde>
+   <cli:client numero="1"> 
+      <cli:prenom>alain</cli:prenom>
+      <cli:nom>Therieur</cli:nom>
+      <cli:email>xxx@yyy.fr</cli:email>
+      <cli:adresse>12 rue Elle, 75000 Par ici</cli:adresse>
+   </cli:client>
+   <p:produitEnQte reference="1">
+          <p:designation>cahier</p:designation>
+          <p:caracteristiques> petits carreaux , 100 pages </p:caracteristiques>
+          <p:prix>12.5</p:prix>
+          <p:poids>0.120</p:poids> 
+          <p:volume>0.0239</p:volume>
+          <p:quantite>2</p:quantite>
+  </p:produitEnQte>
+  <p:produitEnQte reference="2">
+          <p:designation>trousse</p:designation>
+          <p:caracteristiques> petite trousse rouge </p:caracteristiques>
+          <p:prix>4.5</p:prix>
+          <p:poids>0.20</p:poids> 
+          <p:volume>0.0439</p:volume>
+          <p:quantite>4</p:quantite>
+   </p:produitEnQte>
+ </cmde:commande>

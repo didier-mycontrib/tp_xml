@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:noNamespaceSchemaLocation="client_sans_ns.xsd"
+      numero="1azerty" > 
+      <prenom>alain</prenom>
+      <nom>Therieur</nom>
+      <email>xxx@yyy.fr</email>
+      <adresse>12 rue Elle, 75000 Par ici</adresse>
+</client>
+  

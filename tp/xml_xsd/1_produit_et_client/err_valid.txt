@@ -1,0 +1,2 @@
+org.xml.sax.SAXParseException; systemId: file:///D:/tp/local-git-mycontrib-repositories/tp_xml/tp/xml_xsd/1_produit_et_client/produit_invalid_b.xml; lineNumber: 6; columnNumber: 18; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://produit.nf.org":label}'. One of '{"http://produit.nf.org":designation}' is expected.
+document xml pas valide

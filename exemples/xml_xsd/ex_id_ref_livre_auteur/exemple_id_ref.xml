@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<biblio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:noNamespaceSchemaLocation="schema_ex_id_ref.xsd">
+               
+	<livre auteur="1">
+		<titre>Livre A</titre>
+		<editeur>Eyrolles</editeur>		
+	</livre>
+	
+    <livre auteur="1">
+		<titre>Livre B</titre>
+		<editeur>Masson</editeur>		
+	</livre>
+
+    <livre auteur="2">
+		<titre>Livre C</titre>
+		<editeur>InterEditions</editeur>		
+	</livre>
+
+	
+	<personne id="1">
+		<nom>durant</nom>
+		<prenom>luc</prenom>		
+	</personne>
+	
+	<personne id="2">
+		<nom>dupond</nom>
+		<prenom>julie</prenom>		
+	</personne>
+	
+</biblio>

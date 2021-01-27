@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:annotation>
+		<xsd:documentation>biblio avec liaison  </xsd:documentation>
+	</xsd:annotation>
+
+		
+<xsd:element name="biblio" type="Bibliographie">
+
+    <!-- attribut id définit en tant que clef primaire sur personne -->
+	<xsd:key name="PersonneKey">
+    	<xsd:selector xpath="personne" />
+    	<xsd:field xpath="@id" />
+	</xsd:key>
+
+	
+	<!-- contrainte d'intégrité : livre/@auteur vers personne/@id --> 
+	<xsd:keyref name="LivreToPersonne" refer="PersonneKey">
+    	<xsd:selector xpath="livre" />
+    	<xsd:field xpath="@auteur" />
+	</xsd:keyref>
+
+</xsd:element>
+	
+<xsd:complexType name="Bibliographie">
+	<xsd:sequence>	    
+	    <xsd:element name="livre" type="Livre" minOccurs="0" maxOccurs="unbounded" />
+	    <xsd:element name="personne" type="Personne" minOccurs="0" maxOccurs="unbounded" />
+	</xsd:sequence>
+</xsd:complexType>
+	
+<xsd:complexType name="Livre">
+	<xsd:sequence>
+		<xsd:element name="titre" type="xsd:string"/>
+		<xsd:element name="editeur" type="xsd:string" />
+	</xsd:sequence>
+	<xsd:attribute name="auteur" type="xsd:string"  /> 
+</xsd:complexType>	
+					
+<xsd:complexType name="Personne">
+	<xsd:sequence>
+		<xsd:element name="nom" type="xsd:string"/>
+		<xsd:element name="prenom" type="xsd:string" />		
+	</xsd:sequence>
+	<xsd:attribute name="id" type="xsd:string" />
+</xsd:complexType>	
+		
+</xsd:schema>
