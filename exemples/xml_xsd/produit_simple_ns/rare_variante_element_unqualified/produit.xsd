@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/produit" 
+        xmlns:tns="http://www.example.org/produit" 
+        elementFormDefault="unqualified"
+		attributeFormDefault="unqualified">
+
+   <xsd:element name="produit" type="tns:Produit" />
+ 
+   <xsd:complexType name="Produit">
+		<xsd:sequence>
+			<xsd:element name="label" type="xsd:string"/>
+			<xsd:element name="prix" type="xsd:decimal"  />
+			<xsd:element name="caracteristique" type="xsd:string"  minOccurs="0"  maxOccurs="8" />
+		</xsd:sequence>
+		<xsd:attribute name="ref" type="xsd:string" use="required" />
+  </xsd:complexType>
+
+</xsd:schema>

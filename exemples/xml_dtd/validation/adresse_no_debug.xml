@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE  address SYSTEM "adresse_debug.dtd"
+	[
+           <!ENTITY % if_debug  "IGNORE">
+           <!ENTITY % if_not_debug "INCLUDE" >
+	]>
+
+<address>
+	<street> 12, rue Elle </street>
+	<zip> 75000 </zip>
+	<town> Paris </town>
+	<country> France </country>
+</address>

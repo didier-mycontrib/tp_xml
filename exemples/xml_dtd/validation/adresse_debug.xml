@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE  address SYSTEM "adresse_debug.dtd"
+	[
+           <!ENTITY % if_debug  "INCLUDE">
+           <!ENTITY % if_not_debug "IGNORE" >
+	]>
+
+<address>
+	Mon adresse version debug 
+    (pas encore tout à fait mise en forme)
+</address>

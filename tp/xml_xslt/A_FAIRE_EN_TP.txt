@@ -1,0 +1,7 @@
+Compléter le fichier commande_xhtml.xsl de manière
+   à ce que cette transformation XSLT appliquée sur
+   le fichier commande.xml puisse généré un résultat ressemblant
+   au contenu du fichier commande.out.html
+
+Transformation à déclencher par exemple via XmlTools de nodepad++
+ou via lite-server + navigateur web

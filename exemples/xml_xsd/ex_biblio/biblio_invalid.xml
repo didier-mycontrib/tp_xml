@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <bibliographie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:noNamespaceSchemaLocation="schema_biblio.xsd">
+               xmlns="http://www.example.org/biblio"
+               xsi:schemaLocation="http://www.example.org/biblio biblio.xsd">
     <titre> Bibliographie sur certains langages de programmation </titre>           
 	<sujet>
 		<titre>C++</titre>
-		<livre prix="30.5">
+		<!-- prix invalide -->
+		<livre xmlns="http://www.example.org/livre" prix="30.5z">
 			<titre>Mieux développer en C++</titre>
 			<auteur>auteur francais</auteur>
 			<editeur>Inter-Editions</editeur>
 		</livre>
-		<livre prix="50">
+		<livre xmlns="http://www.example.org/livre" prix="50">
 			<titre>Numerical recipes in c++</titre>
 			<auteur>auteurs américains</auteur>
 			<editeur>????</editeur>
@@ -17,23 +19,23 @@
 		
 	</sujet>
 	<sujet>
-		<titreInvalide>Java</titreInvalide>
-		<livre prix="30.8">
+		<titre>Java</titre>
+		<livre  xmlns="http://www.example.org/livre" prix="30.8">
 			<titre>Java in a nutshell</titre>
 			<auteur>xxx</auteur>
 			<editeur>O-Reilly</editeur>
 		</livre>
-		<livre prix="45.5" parution="2001-05-12">
+		<livre xmlns="http://www.example.org/livre" prix="45.5" parution="2001-05-12">
 			<titre>J2EE</titre>
 			<auteur>????</auteur>
 			<editeur>Wrox</editeur>
 		</livre>
-		<livre prix="30">
+		<livre xmlns="http://www.example.org/livre" prix="30">
 			<titre>Comment programmer en buvant un cafe</titre>
 			<auteur>remi majeur</auteur>
 			<editeur>xyz</editeur>
 		</livre>
-		<livre prix="25">
+		<livre xmlns="http://www.example.org/livre" prix="25">
 			<titre>JSP</titre>
 			<auteur>didier deFrance</auteur>
 			<editeur>xyz</editeur>
@@ -41,12 +43,12 @@
 	</sujet>
 	<sujet>
 		<titre>XML</titre>
-		<livre prix="27">
+		<livre xmlns="http://www.example.org/livre" prix="27">
 			<titre>XML, langage et applications</titre>
 			<auteur>Alain Michard (INRIA)</auteur>
 			<editeur>Eyrolles</editeur>
 		</livre>
-		<livre prix="15">
+		<livre xmlns="http://www.example.org/livre" prix="15">
 			<titre>XML en poche</titre>
 			<auteur>auteur qui a ecrit le livre</auteur>
 			<editeur>éditeur qui va bien</editeur>

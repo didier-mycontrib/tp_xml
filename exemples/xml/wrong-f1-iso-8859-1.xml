@@ -1,0 +1,7 @@
+<?xml version="1.0"  ?> <!-- considere comme UTF8 par defaut -->
+
+<p>
+    <titre> Un deux trois </titre>           
+	<texte> je suis une phrase </texte>
+	<texte> c'était l'été (avec caractéres accentués saisis via éditeur iso-8859-1) </texte>
+</p>

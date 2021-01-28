@@ -1,0 +1,52 @@
+<html>
+</head>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function btn_onClick()
+{
+   calculer_moyenne(thisForm.ficXml.value);
+}
+
+function calculer_moyenne(xmlFileName)
+{
+ //alert(thisForm.ficXml.value)
+ var sourceXml=new ActiveXObject("Microsoft.XMLDOM");
+ sourceXml.async=false;
+ sourceXml.load(xmlFileName);
+ if(sourceXml.parseError.errorCode !=0) alert("Document XML incorrect");
+
+ var noeudSerie =   sourceXml.documentElement;
+ var listeNoeudsFils = noeudSerie.childNodes;
+ var nbFils = listeNoeudsFils.length;
+
+var s=0;
+
+for (i=0;i<nbFils;i++)
+   { 
+   var noeudVal = listeNoeudsFils.item(i);
+   var noeudTexte = noeudVal.firstChild;
+  
+    s= s + parseInt(noeudTexte.nodeValue);  
+   }
+ 
+	alert("Moyenne=" + (s/nbFils));	
+
+}
+
+</SCRIPT>
+
+</head>
+
+<body>
+
+page html contenant un script XML-DOM (en javascript) permettant de calculer la
+moyenne des valeurs du fichier xml
+<HR>
+<form name="thisForm">
+Fichier xml source:<input type=text id="ficXml" name="ficXml" value="serie.xml"> <BR>
+<input type=button id="btn" name="btn" value="calcul" onClick="btn_onClick()">
+</form>
+
+</body>
+</html>

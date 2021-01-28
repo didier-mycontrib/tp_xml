@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <!-- commentaire -->
 <pays xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:noNamespaceSchemaLocation="france.xsd"
-                nom='France' capitale='Paris' >
+      xmlns="http://www.example.org/geo"
+      xsi:schemaLocation="http://www.example.org/geo france.xsd"
+      nom='France' capitale='Paris' >
     <region nom='Haute-Normandie' >
     	<departement nom='Eure' num='27' prefecture='Evreux' />
         <departement nom='Seine Maritime' num='76' prefecture='Rouen' />        

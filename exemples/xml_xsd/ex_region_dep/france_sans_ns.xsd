@@ -1,0 +1,29 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   
+<xsd:element name='pays' type='Pays' />    
+    
+<xsd:complexType name="Pays">
+		<xsd:sequence>			
+			<xsd:element name="region" type="Region" maxOccurs='20' />			
+		</xsd:sequence>
+		<xsd:attribute name="nom" type="xsd:string"/>
+		<xsd:attribute name="capitale" type="xsd:string"/>
+</xsd:complexType>				
+
+<xsd:complexType name="Region">
+		<xsd:sequence>			
+			<xsd:element name="departement" type="Departement" maxOccurs='8' />			
+		</xsd:sequence>
+		<xsd:attribute name="nom" type="xsd:string"/>
+</xsd:complexType>
+
+<xsd:complexType name="Departement">		
+		<xsd:attribute name="nom" type="xsd:string"/>
+		<xsd:attribute name="num" type="xsd:positiveInteger"/>
+		<xsd:attribute name="prefecture" type="xsd:string"/>
+</xsd:complexType>				
+				
+
+	
+</xsd:schema>

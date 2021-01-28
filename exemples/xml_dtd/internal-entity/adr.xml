@@ -1,0 +1,10 @@
+<!DOCTYPE exemple [
+<!ENTITY copyright "&#x00A9;">
+<!ENTITY politesses "Veillez agreer , &mme_m; .... salutations distinguees" >
+<!ENTITY mme_m "Madame, Monsieur" >
+]>
+<exemple>
+<p> mon texte </p>
+<p> &politesses; </p>
+<p> &copyright;XYZ </p>
+</exemple>

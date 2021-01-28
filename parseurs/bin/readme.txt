@@ -8,6 +8,9 @@ Utilisation:
 pour validation xml via dtd :
 java -cp myJavaXml.jar tp.xml.DtdXmlValidatorApp xmlFilePath
 
+pour remplacement des entites dans un fichier xml:
+java -cp myJavaXml.jar tp.xml.DtdXmlEntitiesReplaceApp xmlFilePath
+
 pour validation xml via xsd :
 java -cp myJavaXml.jar tp.xml.XsdXmlValidatorApp xmlFilePath
 java -cp myJavaXml.jar tp.xml.XsdXmlValidatorApp xmlFilePath xsdFilePath

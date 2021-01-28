@@ -1,2 +1,0 @@
-org.xml.sax.SAXParseException; systemId: file:///D:/tp/local-git-mycontrib-repositories/tp_xml/exemples/xml_xsd/produit_simple/produit2Invalide.xml; lineNumber: 5; columnNumber: 22; cvc-datatype-valid.1.2.1: '3.6a' is not a valid value for 'decimal'.
-document xml pas valide

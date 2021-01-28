@@ -1,0 +1,8 @@
+<!ENTITY % if_debug "IGNORE">
+<!ENTITY % if_not_debug "INCLUDE">
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT town (#PCDATA)>
+<!ELEMENT country (#PCDATA) >
+<![ %if_debug; [ <!ELEMENT address (#PCDATA | ANY)*>  ]]>
+<![ %if_not_debug; [ <!ELEMENT address (street,zip,town,country?) >  ]]>

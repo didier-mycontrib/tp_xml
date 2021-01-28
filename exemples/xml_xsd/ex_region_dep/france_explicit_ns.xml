@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!-- commentaire -->
+<geo:pays xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:geo="http://www.example.org/geo"
+      xsi:schemaLocation="http://www.example.org/geo france.xsd"
+      nom='France' capitale='Paris' >
+    <geo:region nom='Haute-Normandie' >
+    	<geo:departement nom='Eure' num='27' prefecture='Evreux' />
+        <geo:departement nom='Seine Maritime' num='76' prefecture='Rouen' />        
+    </geo:region>
+    <geo:region nom='Picardie'>
+         <geo:departement nom='Somme' num='80' prefecture='Amiens' />
+         <geo:departement nom='Oise' num='60' prefecture='Beauvais' />
+         <geo:departement nom='Aisne' num='02' prefecture='Laon' />
+    </geo:region>
+</geo:pays>

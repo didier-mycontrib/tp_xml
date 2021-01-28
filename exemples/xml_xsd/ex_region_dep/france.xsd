@@ -1,11 +1,15 @@
 
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/geo" 
+        xmlns:tns="http://www.example.org/geo" 
+        elementFormDefault="qualified"
+		attributeFormDefault="unqualified">
    
-<xsd:element name='pays' type='Pays' />    
+<xsd:element name='pays' type='tns:Pays' />    
     
 <xsd:complexType name="Pays">
 		<xsd:sequence>			
-			<xsd:element name="region" type="Region" maxOccurs='20' />			
+			<xsd:element name="region" type="tns:Region" maxOccurs='20' />			
 		</xsd:sequence>
 		<xsd:attribute name="nom" type="xsd:string"/>
 		<xsd:attribute name="capitale" type="xsd:string"/>
@@ -13,7 +17,7 @@
 
 <xsd:complexType name="Region">
 		<xsd:sequence>			
-			<xsd:element name="departement" type="Departement" maxOccurs='8' />			
+			<xsd:element name="departement" type="tns:Departement" maxOccurs='8' />			
 		</xsd:sequence>
 		<xsd:attribute name="nom" type="xsd:string"/>
 </xsd:complexType>

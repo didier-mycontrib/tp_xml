@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<product ref="1" xmlns:p="http://produit.nf.org" xmlns="http://product.xyz.org">
+<designation>cahier</designation>
+<features> petits carreaux , 100 pages </features>
+<price>12.5</price>
+<weight>0.120</weight>
+<volume>0.0239</volume>
+</product>

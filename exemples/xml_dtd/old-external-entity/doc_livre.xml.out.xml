@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><doc xml-lang="fr">
+<preface>
+   Monsieur XXX est a l'origine de ©XXX
+</preface>
+<introduction>
+	Texte de l'introduction
+</introduction>
+<!-- commentaire -->
+<chapitre xml:base="file:///D:/tp/local-git-mycontrib-repositories/tp_xml/exemples/xml_dtd/old-external-entity/chap1.ent.xml">
+	<titre>titre qui va bien </titre>
+	<paragraphe>un deux trois</paragraphe>
+	<paragraphe>quatre cinq six</paragraphe>
+</chapitre>
+
+<chapitre xml:base="file:///D:/tp/local-git-mycontrib-repositories/tp_xml/exemples/xml_dtd/old-external-entity/chap2.ent.xml">
+	Texte du chapitre 2
+</chapitre>
+<conclusion> 
+	Texte de la conclusion	
+</conclusion>
+</doc>

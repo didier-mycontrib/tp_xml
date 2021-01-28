@@ -1,0 +1,1 @@
+ouvrir adr.xml dans un navigateur pour visualiser les remplacements

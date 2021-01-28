@@ -1,0 +1,4 @@
+<!ELEMENT adresse (rue,cp,ville) >
+<!ELEMENT rue (#PCDATA) >
+<!ELEMENT cp (#PCDATA) >
+<!ELEMENT ville (#PCDATA) >

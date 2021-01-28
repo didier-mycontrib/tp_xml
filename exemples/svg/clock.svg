@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	<g stroke="black">
+		<line x1="50" x2="50" y1="50" y2="5" stroke-width=".5" id="secondes" />
+		<line x1="50" x2="50" y1="50" y2="15" stroke-width="1" id="minutes" />
+		<line x1="50" x2="50" y1="50" y2="25" stroke-width="1.5" id="heures" />
+	</g>
+	<g stroke="black" id="marques">
+		<circle cx="50" cy="50" r="3" stroke-width="1" fill="white" id="small"/>
+	</g>
+	<script type="text/javascript">
+	<![CDATA[
+		var SVG_NS ="http://www.w3.org/2000/svg";
+		const pi=3.141592754
+		function ANIM(){
+			a=new Date();
+			h=a.getHours()%12;
+			m=a.getMinutes();
+			s=a.getSeconds();
+			m+=s/60;
+			h+=m/60;
+			document.getElementById("heures").setAttribute("x2", Math.cos((h-3)/6*pi)*25+50);
+			document.getElementById("heures").setAttribute("y2", Math.sin((h-3)/6*pi)*25+50);
+			document.getElementById("minutes").setAttribute("x2", Math.cos((m-15)/30*pi)*35+50);
+			document.getElementById("minutes").setAttribute("y2", Math.sin((m-15)/30*pi)*35+50);
+			document.getElementById("secondes").setAttribute("x2", Math.cos((s-15)/30*pi)*45+50);
+			document.getElementById("secondes").setAttribute("y2", Math.sin((s-15)/30*pi)*45+50);
+			setTimeout("ANIM()", 1000);
+		}
+		ANIM();	// appel de l\'animation
+		var p=document.getElementById("marques");
+		var b=document.getElementById("small");
+		for (i=0;i<60;i++){
+			a=document.createElementNS(SVG_NS, "circle");
+			a.setAttribute("cx", Math.cos((i-15)/30*pi)*47+50);
+			a.setAttribute("cy", Math.sin((i-15)/30*pi)*47+50);
+			a.setAttribute("r", "2");
+			if (i%15==0){
+				a.setAttribute("fill", "black");
+			}else if (i%5==0){
+				a.setAttribute("fill", "gray");
+			}else{
+				a.setAttribute("fill", "white");
+			}
+			a.setAttribute("stroke-width", "0.3");
+			p.appendChild(a);
+		}
+	]]>
+	</script>
+</svg>

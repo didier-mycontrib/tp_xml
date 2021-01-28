@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE 
+ doc [
+ <!ENTITY copyright "&#x00A9;">
+ <!ENTITY Mr "Monsieur">
+ <!ENTITY chapitre1 SYSTEM "chap1.ent.xml" >
+ <!ENTITY chapitre2 SYSTEM "chap2.ent.xml" >
+]>
+<doc xml-lang="fr">
+<preface>
+   &Mr; XXX est a l'origine de &copyright;XXX
+</preface>
+<introduction>
+	Texte de l'introduction
+</introduction>
+&chapitre1;
+&chapitre2;
+<conclusion> 
+	Texte de la conclusion	
+</conclusion>
+</doc>

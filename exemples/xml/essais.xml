@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<essais>
+    <titre> Quelques essais </titre>           
+	<texte> &#0065; = A dont le code ascii vaut 65 en base 10 </texte>
+	<texte> &#0038; = &amp; a 38 comme code unicode en base 10 </texte>
+	<texte> &#x0026; = &amp; a 26 comme code unicode en base 16 </texte>
+	<texte> &#0064; a 64 comme code unicode en base 10 </texte>
+	<texte> &#0126; a 126 comme code unicode en base 10 </texte>
+	<texte> &#x20AC; a 20AC comme code unicode en base 16 </texte>
+	<texte> &#x00A3; a 00A3 comme code unicode en base 16 </texte>
+	<texte> &#x00E0; a 00E0 comme code unicode en base 16 </texte>
+	<texte> &#x00E8; a 00E8 comme code unicode en base 16 </texte>
+	<texte> &#x00E9; a 00E9 comme code unicode en base 16 </texte>
+	<texte> &#x00A9; a 00A9 comme code unicode en base 16 </texte>
+	<texte> &#x00BD; a 00BD comme code unicode en base 16 </texte>
+	<texte> &#x00AB; a 00AB comme code unicode en base 16 </texte>
+	<texte> &#x00BB; a 00BB comme code unicode en base 16 </texte>
+	<texte> &#x00EA; a 00EA comme code unicode en base 16 </texte>
+	<texte> &#x2211; a 2211 comme code unicode en base 16 </texte>
+	<texte> &#x2264; a 2264 comme code unicode en base 16 </texte>
+	<texte> &#x2265; a 2265 comme code unicode en base 16 </texte>
+	<texte> &#x2260; a 2260 comme code unicode en base 16 </texte>
+	<texte> &#x221E; a 221E comme code unicode en base 16 </texte>
+</essais>

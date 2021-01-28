@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<b:bibliographie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xmlns:b="http://www.example.org/biblio"
+			   xmlns:l="http://www.example.org/livre"
+               xsi:schemaLocation="http://www.example.org/biblio biblio.xsd">
+    <b:titre> Bibliographie sur certains langages de programmation </b:titre>           
+	<b:sujet>
+		<b:titre>C++</b:titre>
+		<l:livre  prix="30.5">
+			<l:titre>Mieux développer en C++</l:titre>
+			<l:auteur>auteur francais</l:auteur>
+			<l:editeur>Inter-Editions</l:editeur>
+		</l:livre>
+		<l:livre  prix="50">
+			<l:titre>Numerical recipes in c++</l:titre>
+			<l:auteur>auteurs américains</l:auteur>
+			<l:editeur>????</l:editeur>
+		</l:livre>
+	</b:sujet>
+	<b:sujet>
+		<b:titre>Java</b:titre>
+		<l:livre   prix="30.8">
+			<l:titre>Java in a nutshell</l:titre>
+			<l:auteur>xxx</l:auteur>
+			<l:editeur>O-Reilly</l:editeur>
+		</l:livre>
+	</b:sujet>
+	<b:sujet>
+		<b:titre>XML</b:titre>
+		<l:livre  prix="27">
+			<l:titre>XML, langage et applications</l:titre>
+			<l:auteur>Alain Michard (INRIA)</l:auteur>
+			<l:editeur>Eyrolles</l:editeur>
+		</l:livre>
+		<l:livre  prix="15">
+			<l:titre>XML en poche</l:titre>
+			<l:auteur>auteur qui a ecrit le livre</l:auteur>
+			<l:editeur>éditeur qui va bien</l:editeur>
+		</l:livre>
+		
+	</b:sujet>
+</b:bibliographie>

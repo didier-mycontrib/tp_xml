@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE xsd:schema SYSTEM "./XMLSchema.dtd"> -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/biblio" 
+        xmlns:tns="http://www.example.org/biblio" 
+		xmlns:nsl="http://www.example.org/livre"
+        elementFormDefault="qualified"
+		attributeFormDefault="unqualified">
+
+
+    <xsd:annotation>
+		<xsd:documentation>Base bibliographique</xsd:documentation>
+	</xsd:annotation>
+	
+<!-- importation du "sous-schéma" décrivant la structure d'un livre -->	
+<xsd:import namespace="http://www.example.org/livre" schemaLocation="livre.xsd" />	
+
+	
+<xsd:element name="bibliographie" type="tns:Bibliographie"/>
+	
+<xsd:element name="titre" type="xsd:string"/>
+	
+
+
+<xsd:complexType name="Bibliographie">
+	<xsd:sequence>
+	    <xsd:element ref="tns:titre"/>
+		<xsd:element name="sujet" type="tns:Sujet" minOccurs="0" maxOccurs="unbounded" />					
+	</xsd:sequence>
+</xsd:complexType>
+	
+<xsd:complexType name="Sujet">
+	<xsd:sequence>
+		<xsd:element ref="tns:titre"/>
+		<xsd:element ref="nsl:livre" minOccurs="0" maxOccurs="unbounded" />
+	</xsd:sequence>
+</xsd:complexType>	
+					
+			
+	
+</xsd:schema>

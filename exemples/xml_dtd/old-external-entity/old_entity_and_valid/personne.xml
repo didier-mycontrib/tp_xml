@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<!DOCTYPE personne SYSTEM "personne.dtd"
+[
+ <!ENTITY Mr "Monsieur" >
+ <!ENTITY adr SYSTEM "./adresse.xml" >
+ ]>
+<personne age="35">
+    <titre>&Mr;</titre>
+	<nom>Defrance</nom>
+	<prenom>Didier</prenom>
+	&adr;
+</personne>

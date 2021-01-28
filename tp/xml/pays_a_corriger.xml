@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<-- commentaire qui va bien -->
+<pays nom='France' capitale='Paris' >
+    <region nom='Normandie' >
+    	<departement nom='Eure' num='27' prefecture='Evreux' />
+        <departement nom='Seine Maritime' num='76' prefecture='Rouen' /> 
+        <departement nom='Calvados' num=14 prefecture='Caen' />
+        <departement nom='Manche' num='50' prefecture='Saint Lo' />
+        <departement nom='Orne' num='61' prefecture='Alencon' /> 		
+    </Region>
+    <region nom='Hauts-De-France'>
+         <departement nom='Somme' num='80' prefecture='Amiens' />
+         <departement nom='Oise' num='60' prefecture='Beauvais' />
+         <departement nom='Aisne' num='02' prefecture='Laon' >
+		 <departement nom='Nord' num='59' prefecture='Lille' />
+		 <departement nom='Pas de Calais' num='62' prefecture='Arras' />
+    </region>
+</pays>
+<pays nom='Allemagne' capitale='Berlin' >
+</pays>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <annuaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:noNamespaceSchemaLocation="schema_id_ref.xsd">
+      xmlns="http://www.example.org/xyz"
+      xsi:schemaLocation="http://www.example.org/xyz schema_id_ref.xsd" >
                
     <pays id="1">
        <nom>France</nom>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- <!DOCTYPE xsd:schema SYSTEM "./XMLSchema.dtd"> -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.example.org/xyz" 
+        xmlns:tns="http://www.example.org/xyz" 
+        elementFormDefault="qualified"
+		attributeFormDefault="unqualified">
 
 
     <xsd:annotation>
@@ -10,25 +14,25 @@
 
 	
 		
-<xsd:element name="annuaire" type="annuaireType">
+<xsd:element name="annuaire" type="tns:annuaireType">
 
     <!-- attribut id définit en tant que clef primaire sur pays -->
 	<xsd:key name="PaysKey">
-    	<xsd:selector xpath="pays" />
+    	<xsd:selector xpath="tns:pays" />
     	<xsd:field xpath="@id" />
 	</xsd:key>
 
 
 	<!-- attribut id définit en tant que clef primaire sur adresse -->
 	<xsd:key name="AdresseKey">
-    	<xsd:selector xpath="adresse" />
+    	<xsd:selector xpath="tns:adresse" />
     	<xsd:field xpath="@id" />
 	</xsd:key>
 
 	
 	<!-- contrainte d'intégrité : personne/@idAdr vers adresse/@id --> 
-	<xsd:keyref name="PersonneToAdresse" refer="AdresseKey">
-    	<xsd:selector xpath="personne" />
+	<xsd:keyref name="PersonneToAdresse" refer="tns:AdresseKey">
+    	<xsd:selector xpath="tns:personne" />
     	<xsd:field xpath="@idAdr" />
 	</xsd:keyref>
 
@@ -36,13 +40,12 @@
 	
 <xsd:complexType name="annuaireType">
 	
-    
-	
+
 	
 	<xsd:sequence>
-	    <xsd:element name="pays" type="Pays" minOccurs="0" maxOccurs="unbounded" />					
-	    <xsd:element name="adresse" type="Adresse" minOccurs="0" maxOccurs="unbounded" />					
-		<xsd:element name="personne" type="Personne" minOccurs="0" maxOccurs="unbounded" />					
+	    <xsd:element name="pays" type="tns:Pays" minOccurs="0" maxOccurs="unbounded" />					
+	    <xsd:element name="adresse" type="tns:Adresse" minOccurs="0" maxOccurs="unbounded" />					
+		<xsd:element name="personne" type="tns:Personne" minOccurs="0" maxOccurs="unbounded" />					
 	</xsd:sequence>
 		
 	

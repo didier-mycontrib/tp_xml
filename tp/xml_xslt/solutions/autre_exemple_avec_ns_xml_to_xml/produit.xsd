@@ -1,0 +1,36 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:nfprod="http://produit.nf.org"
+	targetNamespace="http://produit.nf.org"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+    
+<xsd:element name="produit" type="nfprod:Produit"/>
+<xsd:element name="produitsEnQte" type="nfprod:ProduitEnQte"/>
+
+    
+<!-- produit -->    
+<xsd:complexType name="Produit">
+		<xsd:sequence>
+			<xsd:element name="reference" type="xsd:int"/>
+			<xsd:element name="designation" type="xsd:string"/>
+			<xsd:element name="caracteristiques" type="xsd:string"/>
+			<xsd:element name="prix" type="xsd:double"/>
+			<xsd:element name="poids" type="xsd:double"/> <!-- en kg -->
+			<xsd:element name="volume" type="xsd:double"/> <!-- en l -->
+		</xsd:sequence>
+</xsd:complexType>
+
+<!-- produitEnQte(avec quantite) heritant de produit -->
+<xsd:complexType name="ProduitEnQte">
+   <xsd:complexContent>
+     <xsd:extension base="nfprod:Produit">
+		     <xsd:sequence>
+			      <xsd:element name="quantite" type="xsd:int"/>
+		     </xsd:sequence>
+		 </xsd:extension>
+	</xsd:complexContent>
+</xsd:complexType>	
+
+	
+</xsd:schema>

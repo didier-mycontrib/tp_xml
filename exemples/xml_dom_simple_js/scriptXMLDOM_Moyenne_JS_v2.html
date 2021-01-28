@@ -1,0 +1,60 @@
+<html>
+</head>
+
+<script>
+function btn_onClick(){
+   calculer_moyenne(thisForm.ficXml.value);
+}
+
+function calculer_moyenne(xmlFileName){
+ var xhr = new XMLHttpRequest();
+
+ xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+		    parse_xml_doc(xhr.responseXML);
+		}
+ }
+ xhr.onerror = function() {
+  console.log("Error while getting XML.");
+ }
+
+ xhr.open("GET", xmlFileName, true);
+ xhr.send();
+}
+ 
+function parse_xml_doc(docXml){
+ var noeudSerie =   docXml.documentElement;
+ //console.log("documentElement.nodeName="+docXml.documentElement.nodeName);
+ var listeNoeudsVal = docXml.getElementsByTagName("val");
+ var nbVal = listeNoeudsVal.length;
+ var s=0;
+ for (i=0;i<nbVal;i++){ 
+       var noeudVal = listeNoeudsVal[i];
+	   var noeudTexte = noeudVal.firstChild;
+	   if(noeudTexte){
+		  s= s + parseInt(noeudTexte.nodeValue);  
+		  }
+	   }
+	//alert("Moyenne=" + (s/nbVal));	
+	var moyenne = s/nbVal;
+    document.getElementById("spanMoyenne").innerHTML="<b>"+moyenne+"</b>";
+}
+
+</script>
+
+</head>
+
+<body>
+page html contenant un script XML-DOM (en javascript) permettant de calculer la
+moyenne des valeurs du fichier xml <br/>
+Avec un navigateur récent , ça ne fonctionne qu'en http://...
+avec une url relative menant au fichier .xml à analyser (restrictions CORS)<br/>
+via lite-server et http://localhost:3000 ça fonctionne.
+<HR>
+<form name="thisForm">
+Fichier xml source:<input type=text id="ficXml" name="ficXml" value="serie.xml"> <BR>
+<input type=button id="btn" name="btn" value="calcul" onClick="btn_onClick()">
+</form>
+moyenne=<span id="spanMoyenne"></span>
+</body>
+</html>

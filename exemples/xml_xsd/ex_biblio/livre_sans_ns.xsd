@@ -1,0 +1,18 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+<xsd:element name="titre" type="xsd:string"/>
+
+<xsd:element name="livre" type="Livre"/>	
+	
+<xsd:complexType name="Livre">
+		<xsd:sequence>
+			<xsd:element ref="titre"/>
+			<xsd:element name="auteur" type="xsd:string"/>
+			<xsd:element name="editeur" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="prix" type="xsd:decimal"/>
+		<xsd:attribute name="parution" type="xsd:date"/>
+</xsd:complexType>				
+	
+</xsd:schema>
