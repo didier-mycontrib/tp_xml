@@ -1,0 +1,16 @@
+* s'inspirer de address.dtd et .xml
+  et de lettre.dtd et .xml
+  du répertoire ../../exemples/xml-dtd/validation/
+* écrire un nouveau fichier livre.dtd
+  permettant de valider livre.xml
+  NB: les attributs num et prix seront obligatoires
+      et l'attribut parution sera facultatif
+* ajouter dans le haut de livre.xml une référence
+  (en DODTYPE ...) vers livre.dtd
+* ajuster et lancer le script lancer_validation_xml_via_dtd.bat
+  pour valider le fichier livre.xsd
+* dupliquer le fichier livre.xsd en livre_invalid.xml
+* remplacer <auteur>...</auteur>
+ par <author>...</author> dans livre_invalid.xml
+* ajuster et lancer le script lancer_validation_xml_via_dtd.bat
+  pour visualier "pas valide" avec livre_invalid.xsd

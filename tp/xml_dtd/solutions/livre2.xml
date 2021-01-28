@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!DOCTYPE livre SYSTEM "livre.dtd">
+<livre num="A006QR2KPE" 
+       prix="25.5" >
+	<titre>XML et XSLT</titre>
+	<auteur>Alex Therieur</auteur>
+	<editeur>Eyrolles</editeur>
+</livre>
+		

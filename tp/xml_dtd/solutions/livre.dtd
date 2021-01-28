@@ -1,0 +1,8 @@
+<!ELEMENT livre (titre,auteur,editeur) >
+<!ATTLIST livre num CDATA #REQUIRED
+                prix CDATA #REQUIRED
+                parution CDATA #IMPLIED>
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT auteur (#PCDATA) >
+<!ELEMENT editeur (#PCDATA) >
+

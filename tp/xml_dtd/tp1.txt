@@ -1,0 +1,7 @@
+* dupliquer f1_avec_entites_internes_manquantes.xml en f1.xml
+* ouvrir f1.xml avec un editeur de texte de type notepad++
+* rechercher sur internet 
+  les encodages unicodes des caractères $ et euros.
+* ajouter les entités internes manquantes dans le fichier f1.xml
+* ouvrir f1.xml dans un navigateur 
+  pour visualiser les remplacements

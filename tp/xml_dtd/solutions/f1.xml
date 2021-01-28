@@ -1,0 +1,10 @@
+<!DOCTYPE exemple [
+<!ENTITY copyright "&#x00A9;">
+<!ENTITY dollar "&#x0024;">
+<!ENTITY euro "&#x20AC;">
+]>
+<exemple>
+<p> mon texte </p>
+<p> 12 &dollar; = 10 &euro; </p>
+<p> &copyright;XYZ </p>
+</exemple>

@@ -25,10 +25,23 @@
 	<body>
 	
 	<h3> commande n°<xsl:value-of select="cmde:commande/cmde:numeroCmde"/> 
-	      </h3>
-	...			
+	     du <xsl:value-of select="cmde:commande/cmde:dateCmde"/> </h3>
+	<hr/>				
+	<xsl:apply-templates select="cmde:commande/cli:client" />
+		
 	</body>	
-   </html>		
-</xsl:template>	
+   </html>
+</xsl:template>
+
+<!-- &#xA0; est equivalent xml pour &nbsp; de HTML 
+     et correspond à un caratère espace -->
+<xsl:template match="cli:client">
+   <h4>client </h4>   
+   <label>numero:</label> <b><xsl:value-of select="@numero"/></b> <br/>
+   <label>prenom et nom:</label><b><xsl:value-of select="cli:prenom"/>
+		&#xA0; <xsl:value-of select="cli:nom"/></b> <br/>
+   <label>email:</label> <b><xsl:value-of select="cli:email"/></b> <br/>
+   <label>adresse:</label> <b><xsl:value-of select="cli:adresse"/></b> <br/>
+</xsl:template>
 
 </xsl:stylesheet>

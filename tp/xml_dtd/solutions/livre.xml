@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!DOCTYPE livre SYSTEM "livre.dtd">
+<livre num="B006QR2KPE" 
+       prix="45.5" 
+	   parution="2001-05-12">
+	<titre>XML</titre>
+	<auteur>jean Bon</auteur>
+	<editeur>Eyrolles</editeur>
+</livre>
+		
