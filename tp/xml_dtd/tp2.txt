@@ -13,4 +13,4 @@
 * remplacer <auteur>...</auteur>
  par <author>...</author> dans livre_invalid.xml
 * ajuster et lancer le script lancer_validation_xml_via_dtd.bat
-  pour visualier "pas valide" avec livre_invalid.xsd
+  pour visualier "pas valide" avec livre_invalid.xml

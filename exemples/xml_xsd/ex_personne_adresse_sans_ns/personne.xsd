@@ -15,6 +15,7 @@
 <xsd:simpleType name="myLitteInteger"> 
     <xsd:restriction base="xsd:positiveInteger"> 
          <xsd:maxInclusive value="149"/> 
+		 <!-- <xsd:totalDigits value="3"/> pour 999 au max -->
    </xsd:restriction> 
 </xsd:simpleType> 
 

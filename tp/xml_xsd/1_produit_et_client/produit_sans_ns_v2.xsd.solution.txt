@@ -11,21 +11,19 @@
 			<xsd:element name="designation" type="myLitteString"/> <!-- <xsd:element name="designation" type="xsd:string"/> -->
 			<xsd:element name="caracteristiques" type="xsd:string"
 			             minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element name="prix"> 
-			   <xsd:simpleType> 
-					<xsd:restriction base="xsd:decimal">  
-						<xsd:totalDigits value="6"/> 
-						<xsd:fractionDigits value="2"/>
-					</xsd:restriction> 
-				</xsd:simpleType>
-			</xsd:element><!-- <xsd:element name="prix" type="xsd:double"/> -->
+			<xsd:element name="prix" type="myLittePrice"/> <!-- <xsd:element name="prix" type="xsd:double"/> -->
 			<xsd:element name="poids" type="xsd:double"/> <!-- en kg -->
 			<xsd:element name="volume" type="xsd:double"/> <!-- en l -->
 		</xsd:sequence>
 		<xsd:attribute name="reference" type="xsd:int"/>
 </xsd:complexType>
 
- 
+<xsd:simpleType name="myLittePrice"> 
+    <xsd:restriction base="xsd:decimal">  
+		 <xsd:totalDigits value="6"/> 
+		 <xsd:fractionDigits value="2"/>
+   </xsd:restriction> 
+</xsd:simpleType> 
 
 <xsd:simpleType name="myLitteString"> 
     <xsd:restriction base="xsd:string">  
