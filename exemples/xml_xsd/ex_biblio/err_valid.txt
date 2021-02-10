@@ -1,0 +1,2 @@
+org.xml.sax.SAXParseException; cvc-complex-type.2.4.a: Invalid content was found starting with element 'titreInvalide'. One of '{titre}' is expected.
+document xml pas valide

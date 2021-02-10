@@ -1,2 +1,0 @@
-org.xml.sax.SAXParseException; systemId: file:///D:/tp/local-git-mycontrib-repositories/tp_xml/tp/xml_xsd/2_commande/demandeLivraison_invalid_b.xml; lineNumber: 21; columnNumber: 38; cvc-datatype-valid.1.2.1: 'azerty' is not a valid value for 'integer'.
-document xml pas valide

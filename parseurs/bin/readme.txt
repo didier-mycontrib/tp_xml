@@ -17,3 +17,8 @@ java -cp myJavaXml.jar tp.xml.XsdXmlValidatorApp xmlFilePath xsdFilePath
 
 pour transformation xslt  :
 java -cp myJavaXml.jar tp.xml.app.XslTransformApp ficSrc.xml ficXslt.xsl ficRes.html/xml
+
+=============================
+pour transformation xslt via SAXON:
+
+java -cp Saxon-HE-10.3.jar net.sf.saxon.Transform -s:source -xsl:stylesheet -o:output

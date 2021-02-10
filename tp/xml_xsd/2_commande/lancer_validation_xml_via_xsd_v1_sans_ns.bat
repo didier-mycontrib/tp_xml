@@ -11,9 +11,11 @@ rem set XMLPath=commande_sans_ns.xml
 rem set XMLPath=commande_sans_ns_invalid.xml
 rem set XSDPath=commande_sans_ns.xsd
 
-rem set XMLPath=demandeLivraison_sans_ns.xml
-set XMLPath=demandeLivraison_sans_ns_invalid.xml
+rem set XMLPath=demandeLivraison_sans_ns_variante_avec_listeProduits.xml
+set XMLPath=demandeLivraison_sans_ns.xml
+rem set XMLPath=demandeLivraison_sans_ns_invalid.xml
 set XSDPath=demandeLivraison_sans_ns.xsd
+rem set XSDPath=demandeLivraison_sans_ns_variante_avec_listeProduits.xsd
 
 
 "%JAVA_HOME%\bin\java" -cp %MyXmlJavaJar% tp.xml.app.XsdXmlValidatorApp %XMLPath% %XSDPath% 2> err_valid.txt

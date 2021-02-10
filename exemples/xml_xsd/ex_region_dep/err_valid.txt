@@ -1,0 +1,2 @@
+org.xml.sax.SAXParseException; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.example.org/geo":reg}'. One of '{"http://www.example.org/geo":region}' is expected.
+document xml pas valide

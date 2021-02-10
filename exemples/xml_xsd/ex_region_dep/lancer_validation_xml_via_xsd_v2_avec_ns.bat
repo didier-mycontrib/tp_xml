@@ -7,9 +7,9 @@ REM set MyXmlJavaJar="D:\tp\local-git-mycontrib-repositories\tp_xml\parseurs\bin
 set MyXmlJavaJar="../../../parseurs/bin/myJavaXml.jar"
 
 
-set XMLPath=france.xml
+rem set XMLPath=france.xml
 rem set XMLPath=france_explicit_ns.xml
-rem set XMLPath=france_invalid.xml
+set XMLPath=france_invalid.xml
 
 set XSDPath=france.xsd
 

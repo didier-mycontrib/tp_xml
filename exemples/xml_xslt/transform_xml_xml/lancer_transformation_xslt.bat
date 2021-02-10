@@ -7,8 +7,8 @@ REM set MyXmlJavaJar="D:\tp\local-git-mycontrib-repositories\tp_xml\parseurs\bin
 set MyXmlJavaJar="../../../parseurs/bin/myJavaXml.jar"
 
 set XMLPath=biblio.xml
-set XSLPath=id_little_changes.xslt
-set OutPath=biblio.out.xml
+set XSLPath=xml-attr-to-elt.xsl
+set OutPath=biblio_no_attr.out.xml
 
 echo %OutPath% va etre regenere en partant en appliquant la transformation %XSLPath% sur le fichier %XMLPath%  
 "%JAVA_HOME%\bin\java" -cp %MyXmlJavaJar% tp.xml.app.XslTransformApp %XMLPath% %XSLPath% %OutPath%

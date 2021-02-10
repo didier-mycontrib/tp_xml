@@ -6,7 +6,7 @@
 			   xmlns:prod="http://produit.nf.org">
                             
 <xsl:output method="html"
-            version="1.0"
+            version="4.0"
             indent="yes"
             encoding="UTF-8"/>                 
                

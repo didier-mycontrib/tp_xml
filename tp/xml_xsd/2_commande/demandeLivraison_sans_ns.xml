@@ -12,19 +12,19 @@
       <adresse>12 rue Elle, 75000 Par ici</adresse>
    </client>
    <produitEnQte reference="1">
-          <designation>cahier</designation>
-          <caracteristiques> petits carreaux , 100 pages </caracteristiques>
-          <prix>12.5</prix>
-          <poids>0.120</poids> 
-          <volume>0.0239</volume>
-          <quantite>2</quantite>
-    </produitEnQte>
-    <produitEnQte reference="2">
-          <designation>trousse</designation>
-          <caracteristiques> petite trousse rouge </caracteristiques>
-          <prix>4.5</prix>
-          <poids>0.20</poids> 
-          <volume>0.0439</volume>
-          <quantite>4</quantite>
-   </produitEnQte>
+			  <designation>cahier</designation>
+			  <caracteristiques> petits carreaux , 100 pages </caracteristiques>
+			  <prix>12.5</prix>
+			  <poids>0.120</poids> 
+			  <volume>0.0239</volume>
+			  <quantite>2</quantite>
+	</produitEnQte>
+	<produitEnQte reference="2">
+			  <designation>trousse</designation>
+			  <caracteristiques> petite trousse rouge </caracteristiques>
+			  <prix>4.5</prix>
+			  <poids>0.20</poids> 
+			  <volume>0.0439</volume>
+			  <quantite>4</quantite>
+	</produitEnQte>
 </demandeLivraison>

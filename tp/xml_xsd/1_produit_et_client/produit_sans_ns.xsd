@@ -7,31 +7,10 @@
     
 <!-- Produit -->    
 <xsd:complexType name="Produit">
-		<xsd:sequence>
-			<xsd:element name="designation" type="myLitteString"/> <!-- <xsd:element name="designation" type="xsd:string"/> -->
-			<xsd:element name="caracteristiques" type="xsd:string"
-			             minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element name="prix"> 
-			   <xsd:simpleType> 
-					<xsd:restriction base="xsd:decimal">  
-						<xsd:totalDigits value="6"/> 
-						<xsd:fractionDigits value="2"/>
-					</xsd:restriction> 
-				</xsd:simpleType>
-			</xsd:element><!-- <xsd:element name="prix" type="xsd:double"/> -->
-			<xsd:element name="poids" type="xsd:double"/> <!-- en kg -->
-			<xsd:element name="volume" type="xsd:double"/> <!-- en l -->
-		</xsd:sequence>
-		<xsd:attribute name="reference" type="xsd:int"/>
+		<!--
+		   PARTIE A COMPLETER EN TP
+		-->
 </xsd:complexType>
-
- 
-
-<xsd:simpleType name="myLitteString"> 
-    <xsd:restriction base="xsd:string">  
-		 <xsd:maxLength value="32"/>
-   </xsd:restriction> 
-</xsd:simpleType> 
 
 <!-- produit commande(avec quantite) heritant de produit -->
 <xsd:complexType name="ProduitEnQte">

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <xsd:annotation>
+		<xsd:documentation>demande de livraison</xsd:documentation>
+	</xsd:annotation>
+	
+<!-- inclusion du "sous-schéma" décrivant la structure d'un produit -->	
+<xsd:include schemaLocation="produit_sans_ns.xsd" />	
+
+<!-- inclusion du "sous-schéma" décrivant la structure d'un client -->	
+<xsd:include schemaLocation="client_sans_ns.xsd" />	
+	
+	
+<xsd:element name="demandeLivraison" type="Demandelivraison"/>
+		
+<xsd:simpleType name="TypeLivraison">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="Colissimo"/>
+		<xsd:enumeration value="Ordinaire"/>
+		<xsd:enumeration value="Express"/>
+		<!-- and so on ... -->
+	</xsd:restriction>
+</xsd:simpleType>
+
+
+<xsd:complexType name="Demandelivraison">
+	<xsd:sequence>
+	  <xsd:element name="numeroCmde" type="xsd:positiveInteger"/>
+	  <xsd:element name="modeLivraison" type="TypeLivraison" />
+	  <xsd:element name="dateCmde" type="xsd:date"/>
+	  <xsd:element name="client" type="Client" />
+     <!--	  
+      <xsd:element name="produitEnQte" type="ProduitEnQte"
+            	  minOccurs="0" maxOccurs="unbounded"/>	
+      -->	
+	 <xsd:element name="listeProduits">
+	    <xsd:complexType >
+	        <xsd:sequence>
+              <xsd:element ref="produitEnQte" 
+            	  minOccurs="0" maxOccurs="unbounded"/>
+           </xsd:sequence>
+       </xsd:complexType>
+     </xsd:element>	   
+	</xsd:sequence>
+</xsd:complexType>
+	
+
+</xsd:schema>

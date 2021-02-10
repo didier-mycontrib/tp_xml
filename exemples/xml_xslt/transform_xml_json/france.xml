@@ -14,6 +14,9 @@
          <departement nom='Oise' num='60' prefecture='Beauvais' />
          <departement nom='Aisne' num='02' prefecture='Laon' />
 		 <departement nom='Pas-de-Calais' num='62' prefecture='Arras' />
-         <departement nom='Nord' num='59' prefecture='Lille' />
+         <departement nom='Nord' num='59' prefecture='Lille' >
+		      <superficie>123</superficie>
+			  <population>456</population>
+		 </departement>
     </region>
 </pays>

@@ -10,8 +10,8 @@ REM produit2.xml et produit2Invalide.xml ne sont pas déjà associés à produit
 REM et necessitent de donner une valeur à XSDPath
 
 
-set XMLPath=exemple_id_ref.xml
-rem set XMLPath=exemple_id_ref_invalid.xml
+rem set XMLPath=exemple_id_ref.xml
+set XMLPath=exemple_id_ref_invalid.xml
 
 set XSDPath=schema_ex_id_ref.xsd
 

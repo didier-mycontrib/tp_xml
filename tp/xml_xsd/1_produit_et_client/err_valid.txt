@@ -1,0 +1,2 @@
+org.xml.sax.SAXParseException; cvc-complex-type.3.2.2: Attribute 'reference' is not allowed to appear in element 'produit'.
+document xml pas valide

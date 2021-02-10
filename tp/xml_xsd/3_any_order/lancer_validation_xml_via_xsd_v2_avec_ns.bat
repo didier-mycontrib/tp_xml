@@ -13,7 +13,7 @@ set XMLPath=produit2_1_1.xml
 rem set XMLPath=produitEnQte.xml
 rem set XMLPath=produit2_invalid.xml
 rem set XMLPath=produit2_1_1_invalid.xml
-remset XMLPath=produitEnQte_invalid.xml
+rem set XMLPath=produitEnQte_invalid.xml
 set XSDPath=produit_1_1.xsd
 
 

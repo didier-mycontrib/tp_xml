@@ -12,9 +12,9 @@ rem set XMLPath=client_invalid_a.xml
 rem set XMLPath=client_invalid_b.xml
 rem set XSDPath=client.xsd
 
-rem set XMLPath=produit.xml
+set XMLPath=produit.xml
 rem set XMLPath=produit_invalid_a.xml
-set XMLPath=produit_invalid_b.xml
+rem set XMLPath=produit_invalid_b.xml
 set XSDPath=produit.xsd
 
 
