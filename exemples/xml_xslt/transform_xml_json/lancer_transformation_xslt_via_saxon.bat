@@ -10,10 +10,11 @@ set XMLPath=france.xml
 set XSLPath=xml_to_json.xsl
 set OutPath=france.json
 
-set Options=
+rem set Options=
 rem set Options="use-badgerfish=true"
 rem set Options="use-rabbitfish=true"
 rem set Options="use-rabbitfish=true" "skip-root=true"
+set Options="skip-root=true"
 
 REM documentation sur les options dans https://github.com/bramstein/xsltjson
 
