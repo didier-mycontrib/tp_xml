@@ -1,0 +1,48 @@
+<?xml  version="1.0" ?>
+<?xml-stylesheet  href="./lettre.css" type="text/css" ?>
+<letter>
+   <head>
+	<location> Paris </location>
+	<date xml:lang="fr"> 26 mai 2000 </date>
+	<from>
+		<title> Mr </title>
+		<name>NomA </name>
+		<company> SocieteZZZ </company>
+		<address>
+		    <street> 12, rue XXX </street>
+		    <zip> 75000 </zip>
+		    <town> Paris </town>
+		    <country> France </country>
+		</address>
+		<telephone> 01.02.03.05.06 </telephone>
+	</from>
+
+	<to>
+		<title> Mme </title>
+		<name>NomB </name>
+		<company> Societe SocX </company>
+		<address>
+		    <street> 8, rue YYY </street>
+		    <zip> 76000 </zip>
+		    <town> Rouen </town>
+		    <country> France </country>
+		</address>
+		<telephone> 06.02.04.05.01 </telephone>
+	</to>
+	<subject>
+		Lettre d'insulte
+	</subject>
+     </head>
+	
+     <body>
+		<p>Je ne sais pas ce que je vous dis mais je vous insulte</p>
+		<p>blabla 
+		.... </p>
+		<p>blabla
+		...</p>
+		
+     </body>
+	<signature> SignXXXX </signature>
+
+	
+</letter>

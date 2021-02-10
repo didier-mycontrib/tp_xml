@@ -1,0 +1,62 @@
+* { display:block }
+
+letter { 
+background-color: silver;
+color: #0000AA;
+font-size :  14pt;
+font-family : Courier; 
+}
+
+location { 
+margin-left: 5cm ;
+float:left ;
+font-weight : bold;
+}
+
+
+date:before { content: "le " ;
+}
+
+date { 
+font-weight : bold;
+}
+
+from:before { content: "de "; font-style: italic; color: #000000;}
+from { margin-left:5mm;
+	margin-top: 8mm 
+        }
+
+
+telephone:before { content : "tel: " }
+telephone { margin-left:5mm }
+
+to:before { content: "a " ; color: #000000;
+	   font-style: italic }
+
+title { float: left; margin-right:5mm; margin-left:5mm }
+zip { float: left; margin-right:5mm ;  }
+company { margin-left: 5mm; }
+
+to  { 
+margin-left:100mm;
+margin-top:1cm
+}
+
+address { 
+	margin-left:5mm;
+	font-style: normal;
+	
+        }
+
+subject:before { content: "sujet:"; text-decoration: underline; font-weight:normal  }
+
+subject { 
+	margin-top:5mm; margin-left:5mm;
+	font-style:italic; font-weight:bold; }
+
+body { margin-top: 15mm;
+       margin-left: 1cm ;
+       white-space:normal}
+
+signature { margin-left:12cm; margin-top:5mm; font-weiht:bold }
+
