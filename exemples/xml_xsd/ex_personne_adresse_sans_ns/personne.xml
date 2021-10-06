@@ -2,8 +2,9 @@
 <personne age="50"
      	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      	  xsi:noNamespaceSchemaLocation="personne.xsd">
-	<nom>Defrance</nom>
 	<prenom>Didier</prenom>
+	<nom>Defrance</nom>
+	
 	<adresse> 
 	      <rue>10 rue Elle</rue>
 	      <cp>75000</cp>

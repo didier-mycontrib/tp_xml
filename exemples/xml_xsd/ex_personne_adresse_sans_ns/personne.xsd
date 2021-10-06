@@ -5,11 +5,16 @@
     
 <xsd:complexType name="Personne">
          
-		<xsd:sequence>
+		<xsd:all>
 			<xsd:element name="nom" type="xsd:string"/>
-			<xsd:element name="prenom" type="xsd:string" maxOccurs="3" />
+		    <!-- a l'interieur de xsd:all 
+			   maxOccurs="2" est inderdit par XSD 1.0 (xmlCooktop , notepad++, ...)
+			   et tout de meme autorisé par XSD 1.1 (ex: parseur récent codé en java)
+             -->			
+			<xsd:element name="prenom" type="xsd:string" maxOccurs="1" />
+			<xsd:element name="prenom2" type="xsd:string" minOccurs="0" />
 			<xsd:element name="adresse" type="Adresse" />
-		</xsd:sequence>
+		</xsd:all>
 		<xsd:attribute name="age" type="myLitteInteger" use="optional" />
 </xsd:complexType>
 
