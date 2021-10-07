@@ -1,0 +1,14 @@
+<stats>
+   <s>
+      <date>2021-10-06</date>
+	  <color>green</color>
+	  <value>9.34</value>
+	  <unit>celcius</unit>
+   </s> 
+   <s>
+      <date>2021-10-07</date>
+	  <color>red</color>
+	  <value>29.34</value>
+	  <unit>kelvin</unit>
+   </s> 
+</stats>

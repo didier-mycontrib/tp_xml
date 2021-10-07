@@ -1,0 +1,1 @@
+les versions basic et v2 sont basés sur une structure de départ à base de sous balises (et pas attributs).

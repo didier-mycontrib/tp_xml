@@ -13,7 +13,8 @@
 	</xsd:annotation>
 	
 <!-- importation du "sous-schéma" décrivant la structure d'un livre -->	
-<xsd:import namespace="http://www.example.org/livre" schemaLocation="livre.xsd" />	
+<xsd:import namespace="http://www.example.org/livre" 
+             schemaLocation="livre.xsd" />	
 
 	
 <xsd:element name="bibliographie" type="tns:Bibliographie"/>

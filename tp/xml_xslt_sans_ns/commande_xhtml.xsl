@@ -23,6 +23,7 @@
 	
 	<h3> commande n°<xsl:value-of select="commande/numeroCmde"/> 
 	      </h3>
+		  <hr/>
 	...			
 	</body>	
    </html>		
