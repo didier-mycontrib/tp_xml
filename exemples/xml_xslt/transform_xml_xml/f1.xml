@@ -1,7 +1,7 @@
 <stats>
-   <s date="2021-10-06" color="green" value="9.34" unit="celcius" />
-   <s date="2021-10-07" color="red" value="12.34" unit="celcius" />
-   <s date="2021-10-08" color="blue" value="2.34" unit="celcius" />
-   <s date="2021-10-07" color="yellow" value="12.34" unit="celcius" />
-   <s date="2021-10-08" color="orange" value="2.34" unit="celcius" />
+   <s date="10-01-2021" color="green" value="9.34" unit="celcius" />
+   <s date="10-02-2021" color="red" value="12.34" unit="celcius" />
+   <s date="10-03-2021" color="blue" value="2.34" unit="celcius" />
+   <s date="10-02-2021" color="yellow" value="12.34" unit="celcius" />
+   <s date="10-01-2021" color="orange" value="2.34" unit="celcius" />
 </stats>

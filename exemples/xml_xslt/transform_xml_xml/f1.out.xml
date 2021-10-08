@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><stats>
-   <val d="2021-10-06" color="vert" temperature="282.48999999999995" unit="kelvin"/>
-   <val d="2021-10-07" color="rouge" temperature="285.48999999999995" unit="kelvin"/>
-   <val d="2021-10-08" color="bleu" temperature="275.48999999999995" unit="kelvin"/>
-   <val d="2021-10-07" color="jaune_orange_marron" temperature="285.48999999999995" unit="kelvin"/>
-   <val d="2021-10-08" color="jaune_orange_marron" temperature="275.48999999999995" unit="kelvin"/>
+   <val d="10-Jan-2021" color="vert" temperature="282.48999999999995" unit="kelvin"/>
+   <val d="10-Feb-2021" color="rouge" temperature="285.48999999999995" unit="kelvin"/>
+   <val d="10-Dec-2021" color="bleu" temperature="275.48999999999995" unit="kelvin"/>
+   <val d="10-Feb-2021" color="jaune_orange_marron" temperature="285.48999999999995" unit="kelvin"/>
+   <val d="10-Jan-2021" color="jaune_orange_marron" temperature="275.48999999999995" unit="kelvin"/>
 </stats>

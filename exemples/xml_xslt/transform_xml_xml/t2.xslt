@@ -20,11 +20,27 @@
             <xsl:param name="t" select="0" />
 			<xsl:value-of select="$t + 273.15" />
      </xsl:template>
+	 
+	 <xsl:template name="date_moisNum2moisString" >
+		<xsl:param name="date" select="01-01-2021"/>
+		<xsl:variable name="moisNum" select="substring($date, 4, 2)" />
+		<xsl:variable name="mois">
+			<xsl:choose> 
+				<xsl:when test="$moisNum='01'">Jan</xsl:when>
+				<xsl:when test="$moisNum='02'">Feb</xsl:when>
+				<!-- a completer -->
+				<xsl:otherwise>Dec</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="concat(substring($date, 1, 2),'-',$mois,'-','20', substring($date,9,2))"/>
+	 </xsl:template>
 
 	<xsl:template match="s"> 
  		 <xsl:element name="val"> 
   			  <xsl:attribute  name="d" >
-			      <xsl:value-of select="@date" />
+			      <xsl:call-template name="date_moisNum2moisString">
+                      <xsl:with-param name="date" select="@date" />
+				  </xsl:call-template>
 			  </xsl:attribute>
               <xsl:attribute  name="color">
 			      <xsl:call-template name="color_en2fr">
