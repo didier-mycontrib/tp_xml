@@ -2,4 +2,6 @@
    <val d="2021-10-06" color="vert" temperature="282.48999999999995" unit="kelvin"/>
    <val d="2021-10-07" color="rouge" temperature="285.48999999999995" unit="kelvin"/>
    <val d="2021-10-08" color="bleu" temperature="275.48999999999995" unit="kelvin"/>
+   <val d="2021-10-07" color="jaune_orange_marron" temperature="285.48999999999995" unit="kelvin"/>
+   <val d="2021-10-08" color="jaune_orange_marron" temperature="275.48999999999995" unit="kelvin"/>
 </stats>

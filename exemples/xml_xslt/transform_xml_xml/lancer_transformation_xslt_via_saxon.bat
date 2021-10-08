@@ -7,7 +7,8 @@ REM set MyXmlJavaJar="D:\tp\local-git-mycontrib-repositories\tp_xml\parseurs\bin
 set MyXmlJavaJar="../../../parseurs/bin/Saxon-HE-10.3.jar"
 
 set XMLPath=biblio.xml
-set XSLPath=id_little_changes.xslt
+REM set XSLPath=id_little_changes.xslt
+set XSLPath=xml-attr-to-elt.xsl
 set OutPath=biblio.out.xml
 
 echo %OutPath% va etre regenere en partant en appliquant la transformation %XSLPath% sur le fichier %XMLPath%  

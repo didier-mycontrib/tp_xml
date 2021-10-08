@@ -1,1 +1,9 @@
-{"nom":"France","capitale":"Paris","region":[{"nom":"Normandie","departement":[{"nom":"Eure","num":27,"prefecture":"Evreux"},{"nom":"Seine Maritime","num":76,"prefecture":"Rouen"},{"nom":"Calvados","num":14,"prefecture":"Caen"},{"nom":"Manche","num":50,"prefecture":"St-Lô"},{"nom":"Orne","num":61,"prefecture":"Alençon"}]},{"nom":"Hauts-de-France","departement":[{"nom":"Somme","num":80,"prefecture":"Amiens"},{"nom":"Oise","num":60,"prefecture":"Beauvais"},{"nom":"Aisne","num":"02","prefecture":"Laon"},{"nom":"Pas-de-Calais","num":62,"prefecture":"Arras"},{"nom":"Nord","num":59,"prefecture":"Lille","superficie":123,"population":456}]}]}
+{"nom":"France",
+"capitale":"Paris",
+"region":[
+   {"nom":"Normandie",
+    "departement":[{"nom":"Eure",
+		  "num":27,"prefecture":"Evreux"},{"nom":"Seine Maritime","num":76,"prefecture":"Rouen"},{"nom":"Calvados","num":14,"prefecture":"Caen"},{"nom":"Manche","num":50,"prefecture":"St-Lô"},{"nom":"Orne","num":61,"prefecture":"Alençon"}]}
+		  
+   ,{"nom":"Hauts-de-France",
+   "departement":[{"nom":"Somme","num":80,"prefecture":"Amiens"},{"nom":"Oise","num":60,"prefecture":"Beauvais"},{"nom":"Aisne","num":"02","prefecture":"Laon"},{"nom":"Pas-de-Calais","num":62,"prefecture":"Arras"},{"nom":"Nord","num":59,"prefecture":"Lille","superficie":123,"population":456}]}]}

@@ -1,4 +1,4 @@
-date,color,value,unit
-2021-10-06,green,9.34,celcius
-2021-10-07,red,12.34,celcius
-2021-10-08,blue,2.34,celcius
+date;color;value;unit
+2021-10-06;green;9.34;celcius
+2021-10-07;red;12.34;celcius
+2021-10-08;blue;2.34;celcius

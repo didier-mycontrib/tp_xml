@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="biblio_xhtml.xsl"?><bibliographie>
-    <title> Bibliographie sur certains langages de programmation </title>           
+    <titre> Bibliographie sur certains langages de programmation </titre>           
 	<sujet>
-		<title>C++</title>
-		<book price="30.5">
-			<title>Mieux developper en C++</title>
+		<titre>C++</titre>
+		<livre><prix>30.5</prix>
+			<titre>Mieux developper en C++</titre>
 			<auteur>auteur francais</auteur>
 			<editeur>Inter-Editions</editeur>
-		</book>
-		<book price="50">
-			<title>Numerical recipes in c++</title>
+		</livre>
+		<livre><prix>50</prix>
+			<titre>Numerical recipes in c++</titre>
 			<auteur>auteurs americains</auteur>
 			<editeur>????</editeur>
-		</book>
+		</livre>
 		
 	</sujet>
 	<sujet>
-		<title>Java</title>
-		<book price="30.8">
-			<title>Java in a nutshell</title>
+		<titre>Java</titre>
+		<livre><prix>30.8</prix>
+			<titre>Java in a nutshell</titre>
 			<auteur>xxx</auteur>
 			<editeur>O-Reilly</editeur>
-		</book>
-		<book price="45.5">
-			<title>J2EE</title>
+		</livre>
+		<livre><prix>45.5</prix><parution>2001-05-12</parution>
+			<titre>J2EE</titre>
 			<auteur>????</auteur>
 			<editeur>Wrox</editeur>
-		</book>
-		<book price="30">
-			<title>Comment programmer en buvant un cafe</title>
+		</livre>
+		<livre><prix>30</prix>
+			<titre>Comment programmer en buvant un cafe</titre>
 			<auteur>remi Majeur</auteur>
 			<editeur>World Company</editeur>
-		</book>
-		<book price="25">
-			<title>JSP</title>
+		</livre>
+		<livre><prix>25</prix>
+			<titre>JSP</titre>
 			<auteur>jean Bon</auteur>
 			<editeur>World Company</editeur>
-		</book>
+		</livre>
 	</sujet>
 	<sujet>
-		<title>XML</title>
-		<book price="27">
-			<title>XML, langage et applications</title>
+		<titre>XML</titre>
+		<livre><prix>27</prix>
+			<titre>XML, langage et applications</titre>
 			<auteur>Alain Michard (INRIA)</auteur>
 			<editeur>Eyrolles</editeur>
-		</book>
-		<book price="15">
-			<title>XML en poche</title>
+		</livre>
+		<livre><prix>15</prix>
+			<titre>XML en poche</titre>
 			<auteur>auteur qui a ecrit le livre</auteur>
 			<editeur>editeur qui va bien</editeur>
-		</book>
+		</livre>
 		
 	</sujet>
 </bibliographie>

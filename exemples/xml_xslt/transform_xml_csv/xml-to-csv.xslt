@@ -3,7 +3,7 @@
 	<xsl:output method="text" encoding="UTF-8"/>
      <xsl:strip-space elements="*"/>
 	 
-  <xsl:param name="delimiter" select="','" />
+  <xsl:param name="delimiter" select="';'" />
   <xsl:param name="break" select="'&#xA;'" />
 
     <csv:columns>

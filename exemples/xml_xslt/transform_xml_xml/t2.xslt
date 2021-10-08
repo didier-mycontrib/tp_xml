@@ -4,12 +4,15 @@
 	<!-- <xsl:import href="generic-tr.xslt" />  -->
 <xsl:template name="color_en2fr">
             <xsl:param name="colour" select="'black'" />
+			<xsl:variable name="listeCouleurs1" select="'yellow,orange,marron'" />
 			<xsl:choose>
 				<xsl:when test='$colour = "red"' >rouge</xsl:when>
 				<xsl:when test='$colour = "green"'>vert</xsl:when>
 				<xsl:when test='$colour = "blue"' >bleu</xsl:when>
-				<xsl:when test='$colour = "yellow"'>jaune</xsl:when>
-                <xsl:otherwise>noir</xsl:otherwise>
+			<!--	<xsl:when test='($colour = "yellow") or ($colour = "orange") or ($colour = "marron")'>jaune ou jaune</xsl:when> -->
+                <xsl:when test='contains($listeCouleurs1,$colour)'>jaune_orange_marron</xsl:when>
+                
+				<xsl:otherwise>noir</xsl:otherwise>
             </xsl:choose>
      </xsl:template>
 	 
