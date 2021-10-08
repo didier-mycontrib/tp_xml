@@ -14,7 +14,7 @@ version="1.0">
 	 
 	 <xsl:template name="temperature_celcius2kelvin">
             <xsl:param name="t" select="0" />
-			<xsl:value-of select="$t + 273,15" />
+			<xsl:value-of select="$t + 273.15" />
      </xsl:template>
 
 
